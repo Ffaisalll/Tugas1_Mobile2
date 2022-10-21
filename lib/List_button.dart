@@ -13,18 +13,18 @@ class kategori extends StatelessWidget {
       children: [
         Container(
           height: 60,
-          padding: EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
           decoration: BoxDecoration(
               color: Colors.grey.withOpacity(0.1),
               borderRadius: BorderRadius.circular(10)),
           child: Image.asset(iconimage),
         ),
-        SizedBox(
+        const SizedBox(
           height: 10,
         ),
         Text(
           buttonText,
-          style: TextStyle(
+          style: const TextStyle(
               fontSize: 13, fontWeight: FontWeight.bold, color: Colors.black),
         ),
       ],

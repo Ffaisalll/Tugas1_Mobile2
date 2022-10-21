@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:tugas1/donatdetail.dart';
 
 class itemwidget extends StatelessWidget {
   const itemwidget({super.key});

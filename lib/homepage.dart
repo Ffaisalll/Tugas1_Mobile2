@@ -1,7 +1,5 @@
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:tugas1/List_button.dart';
 import 'package:tugas1/body.dart';
 
@@ -19,13 +17,13 @@ class _HomepageState extends State<Homepage> {
         appBar: AppBar(
           elevation: 0,
           backgroundColor: Colors.transparent,
-          leading: Icon(
+          leading: const Icon(
             Icons.menu,
             color: Colors.black,
           ),
-          actions: [
+          actions: const [
             Padding(
-              padding: const EdgeInsets.only(right: 20.0),
+              padding: EdgeInsets.only(right: 20.0),
               child: Icon(
                 Icons.person_outline_rounded,
                 color: Colors.black,
@@ -40,15 +38,15 @@ class _HomepageState extends State<Homepage> {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 textBaseline: TextBaseline.alphabetic,
-                children: [
-                  const Text(
+                children: const [
+                  Text(
                     'I Want to',
                     style: TextStyle(
                         fontSize: 30,
                         fontFamily: 'poppins',
                         color: Colors.black),
                   ),
-                  const Text(
+                  Text(
                     'Eat',
                     style: TextStyle(
                         fontSize: 30,
@@ -59,7 +57,7 @@ class _HomepageState extends State<Homepage> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 15.0,
             ),
             // kategori
@@ -68,7 +66,7 @@ class _HomepageState extends State<Homepage> {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
+                children: const [
                   // icon
                   kategori(
                       iconimage: 'asset/doughnut.png', buttonText: 'Donuts'),
@@ -81,7 +79,7 @@ class _HomepageState extends State<Homepage> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20.0,
             ),
             Expanded(
@@ -90,12 +88,12 @@ class _HomepageState extends State<Homepage> {
                 scrollDirection: Axis.vertical,
                 children: [
                   Container(
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.black,
                      
                     ),
                   ),
-                  itemwidget()
+                  const itemwidget()
                 ],
               )
               )
