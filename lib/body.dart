@@ -1,5 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
+class MyWidget extends StatefulWidget {
+  const MyWidget({super.key});
+  
+  @override
+  State<MyWidget> createState() => _MyWidgetState();
+}
+
+class _MyWidgetState extends State<MyWidget> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
 class itemwidget extends StatelessWidget {
   const itemwidget({super.key});
 
@@ -75,22 +89,23 @@ class itemwidget extends StatelessWidget {
                     )
                   ],
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Icon(
-                      Icons.favorite_border,
-                      color: Colors.red,
-                    ),
-                    Text(
-                      'ADD',
-                      style: TextStyle(
-                          fontFamily: 'poppins',
-                          fontWeight: FontWeight.bold,
-                          fontSize: 12,
-                          decoration: TextDecoration.underline),
-                    )
-                  ],
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Lottie.network('https://assets10.lottiefiles.com/datafiles/r4svAEpkQFrmcdIT0N3sEnH7D72XDnuPcEfHteYT/Twitter Favorite Heart.json')
+                      ,
+                      Text(
+                        'ADD',
+                        style: TextStyle(
+                            fontFamily: 'poppins',
+                            fontWeight: FontWeight.bold,
+                            fontSize: 12,
+                            decoration: TextDecoration.underline),
+                      )
+                    ],
+                  ),
                 )
               ],
             ),
